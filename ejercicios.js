@@ -1,4 +1,4 @@
-//Crea tres variables: una que almacene tu nombre (string), otra tu edad (number), y otra que indique si tienes mascotas (boolean). Luego imprímelas por consola.
+//1) Crea tres variables: una que almacene tu nombre (string), otra tu edad (number), y otra que indique si tienes mascotas (boolean). Luego imprímelas por consola.
 
 let nombre = "luciano";
 let edad = 20;
@@ -8,7 +8,7 @@ console.log("Nombre:", nombre);
 console.log("edad:", edad);
 console.log("tienes mascota?:", TienesMascota);
 
-//Crea dos variables numéricas y muestra en consola su suma, resta, multiplicación y división.
+//2) Crea dos variables numéricas y muestra en consola su suma, resta, multiplicación y división.
 
 let num1 = 25;
 let num2 = 5;
@@ -23,7 +23,7 @@ console.log ("la resta es", resta)
 console.log ("la multiplicacion es", multi)
 console.log ("la division es:", div)
 
-//Crea una función que reciba un nombre como parámetro y devuelva un saludo como string.
+//3) Crea una función que reciba un nombre como parámetro y devuelva un saludo como string.
 
 function nombreSaludo(nombre){
     return "hola " + nombre;
@@ -31,7 +31,7 @@ function nombreSaludo(nombre){
 
 console.log(nombreSaludo("Luciano"));
 
-
+// 4) Crea un array con 5 frutas y recórrelo con un bucle for, mostrando cada fruta en consola.
 const frutas = ["Manzana", "Banana", "Naranja", "Manzana verde", "Uva"];
 
 for (let i = 0; i < frutas.length; i++) {
@@ -44,7 +44,7 @@ const numeroS = [5, 10, 15];
 const numerosMultiplicados = numeroS.map(numero => numero * 2);
 console.log(numerosMultiplicados);
 
-//Crea un array de objetos donde cada objeto tenga un nombre y una edad. Luego, muestra en consola el nombre de cada persona usando forEach.
+//6) Crea un array de objetos donde cada objeto tenga un nombre y una edad. Luego, muestra en consola el nombre de cada persona usando forEach.
 const personas = [
     { nombre: "Luciano", edad: 25 },
     { nombre: "camilo", edad: 30 },
@@ -55,13 +55,13 @@ const personas = [
   });
   
 
- // Crea un array de números y utiliza `filter` para obtener los números mayores a 5.
+ // 7)Crea un array de números y utiliza `filter` para obtener los números mayores a 5.
 
 const numeros = [3, 8, 1, 12, 5, 7];
 const numerosMayoresA5 = numeros.filter(numero => numero > 5);
 console.log(numerosMayoresA5);
 
-//Crea un array de números y usa reduce para obtener la suma total.
+//8) Crea un array de números y usa reduce para obtener la suma total.
 const numeros3 = [3, 5, 2, 8, 10];
 
 const sumaTotal = numeros3.reduce((acumulador, numero) => acumulador + numero, 0);
@@ -70,7 +70,7 @@ console.log(sumaTotal);
 
 
 
-//Crea una función asincrónica que espere 2 segundos y luego devuelva un mensaje. Usa await para esperar su resultado e imprimirlo.
+//9) Crea una función asincrónica que espere 2 segundos y luego devuelva un mensaje. Usa await para esperar su resultado e imprimirlo.
 async function esperarMensaje() {
     await new Promise(resolve => setTimeout(resolve, 2000));
     
